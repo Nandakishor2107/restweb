@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>Administration - HOTSPOT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        nav {
+            background-color: darkslategray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+        header {
+            text-align: center;
+            background-color: lightsteelblue;
+            padding: 20px;
+        }
+        .admin-section {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .admin-section h2 {
+            text-align: center;
+            color: darkslateblue;
+            margin-bottom: 20px;
+        }
+        .admin-team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .team-member {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .admin-login {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .admin-login input {
+            padding: 10px;
+            margin: 10px 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .admin-login button {
+            padding: 10px 20px;
+            background-color: darkslateblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .admin-login button:hover {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="adminstration.html">Administration</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<header>
+    <h1>HOTSPOT Administration</h1>
+</header>
+
+<div class="admin-section">
+    <h2>Meet the Team</h2>
+    <div class="admin-team">
+        <div class="team-member">
+            <h3>John Doe</h3>
+            <p>Manager</p>
+        </div>
+        <div class="team-member">
+            <h3>Jane Smith</h3>
+            <p>Assistant Manager</p>
+        </div>
+        <div class="team-member">
+            <h3>Emily Johnson</h3>
+            <p>HR Head</p>
+        </div>
+    </div>
+
+    <div class="admin-login">
+        <h2>Admin Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

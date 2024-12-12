@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Book a Table - HOTSPOT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        nav {
+            background-color: darkslategray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+        header {
+            text-align: center;
+            background-color: lightsteelblue;
+            padding: 20px;
+        }
+        .booking-section {
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .booking-section h2 {
+            text-align: center;
+            color: darkslateblue;
+            margin-bottom: 20px;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            background-color: darkslateblue;
+            color: white;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="adminstration.html">Administration</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<header>
+    <h1>Book a Table</h1>
+</header>
+
+<div class="booking-section">
+    <h2>Reserve Your Table Now</h2>
+    <form class="booking-form">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <select name="guests" required>
+            <option value="" disabled selected>Number of Guests</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6+">6+ Guests</option>
+        </select>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+</body>
+</html>

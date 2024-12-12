@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Contact Us - HOTSPOT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        nav {
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+        header {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+        .contact-section {
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-section input, .contact-section textarea, .contact-section button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+        }
+        .contact-section textarea {
+            resize: none;
+            height: 100px;
+        }
+        .contact-section button {
+            background-color: #4a4a4a;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="adminstration.html">Administration</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="contact-section">
+    <h2>We'd Love to Hear from You!</h2>
+    <form>
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number (optional)">
+        <textarea name="message" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
